@@ -45,7 +45,7 @@ def doc_classification_crossvalidation():
         device = "cpu"
     n_epochs = NEPOCHS
     batch_size = BATCHSIZE
-    evaluate_every = 100
+    evaluate_every = EVALEVERY
     lang_model = MODELTYPE
     do_lower_case = False
 
@@ -280,6 +280,7 @@ if __name__ == "__main__":
         BATCHSIZE = 4
         FOLDS = 2
         EVAL = 4
+        EVALEVERY = 50
 
     else:
         DATADIR = "../data/document_classification/"
@@ -289,6 +290,7 @@ if __name__ == "__main__":
         BATCHSIZE = 64
         FOLDS = 5
         EVAL = 100
+        EVALEVERY = 500
 
     doc_classification_crossvalidation()
 
