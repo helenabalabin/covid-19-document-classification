@@ -48,11 +48,12 @@ def litcovid_get_metadata(new=False):
                 skipped = skipped + 1
             if(json_doc is not None and "abstract" in json_doc.keys() and "topics" in json_doc.keys()):
                 abstract = json_doc["abstract"][0]
-                if (abstract is not None and len(abstract.split()) > MINLEN):
+                categories = json_doc["topics"][0]
+                if (abstract is not None and len(abstract.split()) > MINLEN and categories != "NONE"):
                     # only use the first listed topic as a label now
                     # (see project proposal)
                     meta_df = meta_df.append({"PMID": i, "Source": "LitCovid", "Abstract": abstract,
-                                              "Categories": json_doc["topics"][0]}, ignore_index=True)
+                                              "Categories": categories}, ignore_index=True)
 
                     # everything below is additional info/nice to have but not required
                     # override source if an explicit souce is provided in the litcovid jsons
