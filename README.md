@@ -1,4 +1,4 @@
-# covid-19-document-classificaton
+# covid-19-document-classification
 NLP project summer semester 2020: Document classifier based on BERT style models using the document classes provided in the LitCovid database
 
 ## Topic
