@@ -279,7 +279,6 @@ if __name__ == "__main__":
         MAXLEN = 32
         BATCHSIZE = 4
         FOLDS = 2
-        EVAL = 4
         EVALEVERY = 50
 
     else:
@@ -289,7 +288,6 @@ if __name__ == "__main__":
         NEPOCHS = 60
         BATCHSIZE = 64
         FOLDS = 5
-        EVAL = 100
         EVALEVERY = 500
 
     doc_classification_crossvalidation()
