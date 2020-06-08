@@ -13,12 +13,12 @@ To train the classifier, I plan to use the publications listed in the LitCovid [
 In order to measure the classification performance of each model, I aim at using k-fold (k=5) cross-validation, recording the classification reports (including recall, precision and f1-scores for each class) on the validation data for each split. I plan to implement the approach using the FARM [8] and/or spacy [9] libraries in python.
 
 ## References
-[1]    J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,” p. 16.
-[2]    A. Adhikari, A. Ram, R. Tang, and J. Lin, “DocBERT: BERT for Document Classification,” ArXiv190408398 Cs, Aug. 2019, Accessed: May 26, 2020. [Online]. Available: http://arxiv.org/abs/1904.08398.
-[3]    J. Lee et al., “BioBERT: a pre-trained biomedical language representation model for biomedical text mining,” Bioinformatics, p. btz682, Sep. 2019, doi: 10.1093/bioinformatics/btz682.
-[4]    “deepset/covid_bert_base · Hugging Face.” https://huggingface.co/deepset/covid_bert_base (accessed May 26, 2020).
-[5]    “LitCovid - NCBI - NLM - NIH.” https://www.ncbi.nlm.nih.gov/research/coronavirus/ (accessed May 26, 2020).
-[6]    Q. Chen, A. Allot, and Z. Lu, “Keep up with the latest coronavirus research,” Nature, vol. 579, no. 7798, pp. 193–193, Mar. 2020, doi: 10.1038/d41586-020-00694-1.
-[7]    “Health Check – Django REST framework.” https://www.ncbi.nlm.nih.gov/research/coronavirus-api/ (accessed May 26, 2020).
-[8]    deepset-ai/FARM. deepset, 2020.
-[9]    explosion/spaCy. Explosion, 2020.
+- [1]    J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,” p. 16.
+- [2]    A. Adhikari, A. Ram, R. Tang, and J. Lin, “DocBERT: BERT for Document Classification,” ArXiv190408398 Cs, Aug. 2019, Accessed: May 26, 2020. [Online]. Available: http://arxiv.org/abs/1904.08398.
+- [3]    J. Lee et al., “BioBERT: a pre-trained biomedical language representation model for biomedical text mining,” Bioinformatics, p. btz682, Sep. 2019, doi: 10.1093/bioinformatics/btz682.
+- [4]    “deepset/covid_bert_base · Hugging Face.” https://huggingface.co/deepset/covid_bert_base (accessed May 26, 2020).
+- [5]    “LitCovid - NCBI - NLM - NIH.” https://www.ncbi.nlm.nih.gov/research/coronavirus/ (accessed May 26, 2020).
+- [6]    Q. Chen, A. Allot, and Z. Lu, “Keep up with the latest coronavirus research,” Nature, vol. 579, no. 7798, pp. 193–193, Mar. 2020, doi: 10.1038/d41586-020-00694-1.
+- [7]    “Health Check – Django REST framework.” https://www.ncbi.nlm.nih.gov/research/coronavirus-api/ (accessed May 26, 2020).
+- [8]    deepset-ai/FARM. deepset, 2020.
+- [9]    explosion/spaCy. Explosion, 2020.
