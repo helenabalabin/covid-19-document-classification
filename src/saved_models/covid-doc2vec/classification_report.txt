@@ -1,0 +1,84 @@
+Evaluation on withheld split for numfold no. 0 
+              precision    recall  f1-score   support
+
+ Case Report       0.62      0.59      0.61        59
+   Diagnosis       0.60      0.50      0.54       181
+   Mechanism       0.53      0.46      0.49        99
+  Prevention       0.80      0.89      0.84       443
+   Treatment       0.67      0.64      0.66       272
+
+    accuracy                           0.70      1054
+   macro avg       0.64      0.62      0.63      1054
+weighted avg       0.69      0.70      0.70      1054
+
+
+Evaluation on withheld split for numfold no. 1 
+              precision    recall  f1-score   support
+
+ Case Report       0.61      0.51      0.56        59
+   Diagnosis       0.62      0.53      0.57       181
+   Mechanism       0.44      0.35      0.39        99
+  Prevention       0.80      0.88      0.84       444
+   Treatment       0.62      0.64      0.63       271
+
+    accuracy                           0.69      1054
+   macro avg       0.62      0.58      0.60      1054
+weighted avg       0.68      0.69      0.68      1054
+
+
+Evaluation on withheld split for numfold no. 2 
+              precision    recall  f1-score   support
+
+ Case Report       0.51      0.52      0.51        60
+   Diagnosis       0.64      0.49      0.56       181
+   Mechanism       0.43      0.32      0.37        99
+  Prevention       0.82      0.88      0.85       443
+   Treatment       0.63      0.71      0.67       271
+
+    accuracy                           0.70      1054
+   macro avg       0.61      0.58      0.59      1054
+weighted avg       0.69      0.70      0.69      1054
+
+
+Evaluation on withheld split for numfold no. 3 
+              precision    recall  f1-score   support
+
+ Case Report       0.54      0.47      0.50        60
+   Diagnosis       0.57      0.54      0.56       180
+   Mechanism       0.39      0.35      0.37        99
+  Prevention       0.77      0.87      0.82       443
+   Treatment       0.63      0.56      0.59       271
+
+    accuracy                           0.66      1053
+   macro avg       0.58      0.56      0.57      1053
+weighted avg       0.65      0.66      0.66      1053
+
+
+Evaluation on withheld split for numfold no. 4 
+              precision    recall  f1-score   support
+
+ Case Report       0.56      0.39      0.46        59
+   Diagnosis       0.53      0.46      0.49       181
+   Mechanism       0.39      0.35      0.37        99
+  Prevention       0.74      0.84      0.79       443
+   Treatment       0.59      0.56      0.58       271
+
+    accuracy                           0.63      1053
+   macro avg       0.56      0.52      0.54      1053
+weighted avg       0.62      0.63      0.62      1053
+
+
+Final result of the best model 
+              precision    recall  f1-score   support
+
+ Case Report       0.52      0.49      0.50        74
+   Diagnosis       0.66      0.55      0.60       225
+   Mechanism       0.45      0.38      0.41       124
+  Prevention       0.82      0.88      0.85       555
+   Treatment       0.64      0.68      0.66       339
+
+    accuracy                           0.70      1317
+   macro avg       0.62      0.60      0.61      1317
+weighted avg       0.70      0.70      0.70      1317
+
+
