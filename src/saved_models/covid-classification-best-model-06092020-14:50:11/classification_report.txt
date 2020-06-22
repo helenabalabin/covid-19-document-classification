@@ -1,0 +1,90 @@
+Evaluation on withheld split for numfold no. 0 
+              precision    recall  f1-score   support
+
+   Mechanism     0.6237    0.4677    0.5346       124
+   Treatment     0.7229    0.6900    0.7061       329
+ Case Report     0.8611    0.8267    0.8435        75
+   Diagnosis     0.6682    0.6967    0.6821       211
+  Prevention     0.9100    0.9100    0.9100       578
+
+   micro avg     0.7987    0.7745    0.7864      1317
+   macro avg     0.7572    0.7182    0.7353      1317
+weighted avg     0.7948    0.7745    0.7834      1317
+ samples avg     0.7741    0.7745    0.7742      1317
+
+
+Evaluation on withheld split for numfold no. 1 
+              precision    recall  f1-score   support
+
+   Mechanism     0.6026    0.3790    0.4653       124
+   Treatment     0.7180    0.7329    0.7254       337
+ Case Report     0.8732    0.8611    0.8671        72
+   Diagnosis     0.6694    0.7289    0.6979       225
+  Prevention     0.8909    0.8909    0.8909       559
+
+   micro avg     0.7849    0.7730    0.7789      1317
+   macro avg     0.7508    0.7186    0.7293      1317
+weighted avg     0.7807    0.7730    0.7742      1317
+ samples avg     0.7730    0.7730    0.7730      1317
+
+
+Evaluation on withheld split for numfold no. 2 
+              precision    recall  f1-score   support
+
+   Mechanism     0.5243    0.4355    0.4758       124
+   Treatment     0.7122    0.7270    0.7195       337
+ Case Report     0.8095    0.8095    0.8095        63
+   Diagnosis     0.7073    0.7073    0.7073       246
+  Prevention     0.9096    0.9013    0.9054       547
+
+   micro avg     0.7835    0.7722    0.7778      1317
+   macro avg     0.7326    0.7161    0.7235      1317
+weighted avg     0.7802    0.7722    0.7758      1317
+ samples avg     0.7703    0.7722    0.7709      1317
+
+
+Evaluation on withheld split for numfold no. 3 
+              precision    recall  f1-score   support
+
+   Mechanism     0.5408    0.4274    0.4775       124
+   Treatment     0.7343    0.6949    0.7141       354
+ Case Report     0.8831    0.7473    0.8095        91
+   Diagnosis     0.6898    0.6712    0.6804       222
+  Prevention     0.8569    0.9221    0.8883       526
+
+   micro avg     0.7748    0.7601    0.7673      1317
+   macro avg     0.7410    0.6926    0.7139      1317
+weighted avg     0.7678    0.7601    0.7623      1317
+ samples avg     0.7593    0.7601    0.7596      1317
+
+
+Evaluation on withheld split for numfold no. 4 
+              precision    recall  f1-score   support
+
+   Mechanism     0.6216    0.3740    0.4670       123
+   Treatment     0.7081    0.7751    0.7401       338
+ Case Report     0.8406    0.8286    0.8345        70
+   Diagnosis     0.7349    0.7022    0.7182       225
+  Prevention     0.9050    0.9002    0.9026       561
+
+   micro avg     0.8002    0.7813    0.7906      1317
+   macro avg     0.7620    0.7160    0.7325      1317
+weighted avg     0.7955    0.7813    0.7851      1317
+ samples avg     0.7809    0.7813    0.7811      1317
+
+
+Final result of the best model 
+              precision    recall  f1-score   support
+
+   Mechanism     0.6494    0.4032    0.4975       124
+   Treatment     0.7722    0.7198    0.7450       339
+ Case Report     0.8101    0.8649    0.8366        74
+   Diagnosis     0.6929    0.7422    0.7167       225
+  Prevention     0.9247    0.9297    0.9272       555
+
+   micro avg     0.8190    0.7904    0.8045      1317
+   macro avg     0.7699    0.7320    0.7446      1317
+weighted avg     0.8135    0.7904    0.7988      1317
+ samples avg     0.7893    0.7904    0.7897      1317
+
+
