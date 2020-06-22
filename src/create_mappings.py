@@ -2,8 +2,35 @@ import pandas as pd
 import os
 import json
 import urllib
+from nltk.stem.wordnet import WordNetLemmatizer
+from nltk.corpus import stopwords
+import nltk
+import re
 from datetime import date
 
+# preprocess the abstracts
+def clean_abstract(abs):
+    # remove unwanted patterns and convert to lower case
+    sub_pattern = "\(|<|>|\)|,|:|%|\+|=|\.|\[|\]|\"|;"
+    abs = [re.sub(sub_pattern,"",i).lower() for i in re.split("[\s/]", abs)]
+    abs = [re.sub("/"," ", i) for i in abs]
+    # remove any items in the list that are only numbers
+    # remove empty strings from the lists
+    # TODO: double check the pattern
+    remove_pattern = "(^$)|(^\d+-*\d+$)"
+    rm = []
+    for i in abs:
+        if re.match(remove_pattern, i) is not None:
+            rm.append(i)
+    # removing stopwords, empty strings and numbers only
+    abs = [i for i in abs if i not in rm and i not in
+           stopwords.words('english') and i not in MANUALFILTER]
+    # lemmatization
+    abs = [WordNetLemmatizer().lemmatize(i) for i in abs]
+    # remove words with just one character
+    abs = [i for i in abs if len(i) > 1]
+    abs = " ".join(abs)
+    return abs
 
 # extract metadata and get the newest litcovid jsons
 def litcovid_get_metadata(new=False):
@@ -52,7 +79,7 @@ def litcovid_get_metadata(new=False):
                 if (abstract is not None and len(abstract.split()) > MINLEN and categories != "NONE"):
                     # only use the first listed topic as a label now
                     # (see project proposal)
-                    meta_df = meta_df.append({"PMID": i, "Source": "LitCovid", "Abstract": abstract,
+                    meta_df = meta_df.append({"PMID": i, "Source": "LitCovid", "Abstract": clean_abstract(abstract),
                                               "Categories": categories}, ignore_index=True)
 
                     # everything below is additional info/nice to have but not required
@@ -90,6 +117,12 @@ def missing_data_summary(df):
     return result
 
 if __name__ == "__main__":
+    # adding some stop words manually
+    MANUALFILTER = ["abstract", "background", "methods", "results", "conclusion", "copyright"]
+    # download stop words and lemmatization wordnet
+    nltk.download('stopwords')
+    nltk.download('wordnet')
+
     # TODO: documentation for methods
 
     # for the sake of simplicity and comparability, a fixed date is used

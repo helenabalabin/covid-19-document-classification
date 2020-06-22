@@ -269,9 +269,9 @@ if __name__ == "__main__":
     # and "Transmission" (3.4% of labels)
     LABELS = ["Mechanism", "Treatment", "Case Report", "Diagnosis",  "Prevention"]
     # change this argument to True if you want to execute the code locally (with smaller hyperparameter settings)
-    RUNLOCAL = True
+    RUNLOCAL = False
 
-    create_textclassification_csv()
+    # create_textclassification_csv()
 
     if RUNLOCAL:
         DATADIR = "../data/document_classification/minitestcase/"
@@ -285,7 +285,7 @@ if __name__ == "__main__":
         DATADIR = "../data/document_classification/"
         # length of words in abstract go roughly from 100 to 300
         MAXLEN = 300
-        NEPOCHS = 60
+        NEPOCHS = 20
         BATCHSIZE = 64
         FOLDS = 5
         EVALEVERY = 500
