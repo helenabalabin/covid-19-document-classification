@@ -30,7 +30,9 @@ class NumpyArrayEncoder(JSONEncoder):
 
 # cross-validation document classification
 def doc_classification_crossvalidation():
-    # TODO: reference to FARM example script
+    # the code for this function is partially taken from:
+    # https://github.com/deepset-ai/FARM/blob/master/examples/doc_classification_multilabel.py and
+    # https://github.com/deepset-ai/FARM/blob/master/examples/doc_classification_crossvalidation.py
 
     # for local logging:
     ml_logger = MLFlowLogger(tracking_uri="")
@@ -241,10 +243,6 @@ def create_textclassification_csv(save=True):
 
 
 if __name__ == "__main__":
-    # TODO: data exploration ipynb with some basic stats: class distribution, distribution of abstract lengths
-    # TODO: documentation
-
-    # TODO: use & compare multiple models
     # testing out different MODELTYPEs
     # 1. bert-base-uncased
     # 2. monologg/biobert_v1.1_pubmed

@@ -15,6 +15,9 @@ def vector_for_learning(model, input_docs):
 
 # create baseline doc2vec model trained on the abstracts
 def d2v_document_classification():
+    # code for this function is partially taken from
+    # https://towardsdatascience.com/multi-class-text-classification-with-doc2vec-logistic-regression-9da9947b43f4
+
     # load the dataset, use the same as for the other classifiers
     train_docs = pd.read_csv("../data/document_classification/train.csv", sep="\t")
     test_docs = pd.read_csv("../data/document_classification/test.csv", sep="\t")
@@ -65,7 +68,7 @@ def d2v_document_classification():
 
         os.makedirs(os.path.dirname('saved_models/covid-doc2vec/classification_report.txt'), exist_ok=True)
         with open('saved_models/covid-doc2vec/classification_report.txt', "a+") as file:
-            file.write("Evaluation on withheld split for numfold no. {} \n".format(idx))but
+            file.write("Evaluation on withheld split for numfold no. {} \n".format(idx))
             file.write(classification_report(y_valid, preds))
             file.write("\n\n")
             file.close()

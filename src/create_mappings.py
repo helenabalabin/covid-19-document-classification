@@ -16,7 +16,6 @@ def clean_abstract(abs):
     abs = [re.sub("/"," ", i) for i in abs]
     # remove any items in the list that are only numbers
     # remove empty strings from the lists
-    # TODO: double check the pattern
     remove_pattern = "(^$)|(^\d+-*\d+$)"
     rm = []
     for i in abs:
@@ -122,8 +121,6 @@ if __name__ == "__main__":
     # download stop words and lemmatization wordnet
     nltk.download('stopwords')
     nltk.download('wordnet')
-
-    # TODO: documentation for methods
 
     # for the sake of simplicity and comparability, a fixed date is used
     # (otherwise new data would be downloaded each time the code is executed
