@@ -12,6 +12,21 @@ To train the classifier, I plan to use the publications listed in the LitCovid [
 ## Evaluation 
 In order to measure the classification performance of each model, I aim at using k-fold (k=5) cross-validation, recording the classification reports (including recall, precision and f1-scores for each class) on the validation data for each split. I plan to implement the approach using the FARM [8] and/or spacy [9] libraries in python.
 
+## Key Results 
+
+![Document classification performance of the Doc2Vec, BERT, BioBERT and CovidBERT models](./data/visualization/f1-score-document-classification-results.png?raw=true "Title")
+<br> <br>
+Document classification performance of the Doc2Vec, BERT, BioBERT and CovidBERT models
+<br> <br>
+![t-SNE visualization of the BERT-style word embeddings in the diagnosis category](./data/visualization/Diagnosis_tsne_plot.png?raw=true "Title")
+t-SNE visualization of the BERT-style word embeddings in the diagnosis category
+
+## Takeaways 
+
+- Domain-specific fine-tuning might not be as effective as it seems 
+- Using pre-trained (BERT-style) models increases the classification performance 
+- t-SNE is sensitive on hyperparameter settings and hard to interpret
+
 ## References
 - [1]    J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,” p. 16.
 - [2]    A. Adhikari, A. Ram, R. Tang, and J. Lin, “DocBERT: BERT for Document Classification,” ArXiv190408398 Cs, Aug. 2019, Accessed: May 26, 2020. [Online]. Available: http://arxiv.org/abs/1904.08398.
@@ -22,3 +37,4 @@ In order to measure the classification performance of each model, I aim at using
 - [7]    “Health Check – Django REST framework.” https://www.ncbi.nlm.nih.gov/research/coronavirus-api/ (accessed May 26, 2020).
 - [8]    deepset-ai/FARM. deepset, 2020.
 - [9]    explosion/spaCy. Explosion, 2020.
+x
