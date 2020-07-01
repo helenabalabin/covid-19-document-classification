@@ -65,7 +65,7 @@ def d2v_document_classification():
 
         os.makedirs(os.path.dirname('saved_models/covid-doc2vec/classification_report.txt'), exist_ok=True)
         with open('saved_models/covid-doc2vec/classification_report.txt', "a+") as file:
-            file.write("Evaluation on withheld split for numfold no. {} \n".format(idx))
+            file.write("Evaluation on withheld split for numfold no. {} \n".format(idx))but
             file.write(classification_report(y_valid, preds))
             file.write("\n\n")
             file.close()
