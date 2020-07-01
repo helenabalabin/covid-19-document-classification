@@ -16,10 +16,10 @@ In order to measure the classification performance of each model, I aim at using
 
 ![Document classification performance of the Doc2Vec, BERT, BioBERT and CovidBERT models](./data/visualization/f1-score-document-classification-results.png?raw=true "Title")
 <br> <br>
-Document classification performance of the Doc2Vec, BERT, BioBERT and CovidBERT models
+Document classification performance of the Doc2Vec [10], BERT, BioBERT and CovidBERT models
 <br> <br>
 ![t-SNE visualization of the BERT-style word embeddings in the diagnosis category](./data/visualization/Diagnosis_tsne_plot.png?raw=true "Title")
-t-SNE visualization of the BERT-style word embeddings in the diagnosis category
+t-SNE [11] visualization of the BERT-style word embeddings in the diagnosis category
 
 ## Takeaways 
 
@@ -37,4 +37,5 @@ t-SNE visualization of the BERT-style word embeddings in the diagnosis category
 - [7]    “Health Check – Django REST framework.” https://www.ncbi.nlm.nih.gov/research/coronavirus-api/ (accessed May 26, 2020).
 - [8]    deepset-ai/FARM. deepset, 2020.
 - [9]    explosion/spaCy. Explosion, 2020.
-x
+- [10]   Q. Le, and T. Mikolov. "Distributed representations of sentences and documents." International conference on machine learning, pp. 1188-1196, Jan. 2014.
+- [11]   L. van der Maaten, and G. Hinton. "Visualizing data using t-SNE." Journal of machine learning research, pp. 2579-2605, Nov. 2008.
